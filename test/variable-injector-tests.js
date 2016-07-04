@@ -1,4 +1,4 @@
-var assert = require('chai').assert;
+var expect = require('chai').expect;
 var variableInjector = require('../lib/variable-injector');
 
 describe('variable-injector', function() {
@@ -8,14 +8,14 @@ describe('variable-injector', function() {
       var contents = 'This is a #{ANIMAL}!';
       var result = variableInjector.inject(contents);
 
-      assert.equal('This is a dog!', result);
+      expect(result).to.equal('This is a dog!');
     });
     it('should replace multiple duplicate placeholders', function() {
       process.env.ANIMAL = 'dog';
       var contents = 'This is a #{ANIMAL}! Do you like #{ANIMAL}s?';
       var result = variableInjector.inject(contents);
 
-      assert.equal('This is a dog! Do you like dogs?', result);
+      expect(result).to.equal('This is a dog! Do you like dogs?');
     });
     it('should replace multiple different placeholders', function() {
       process.env.ANIMAL_1 = 'dog';
@@ -23,13 +23,13 @@ describe('variable-injector', function() {
       var contents = 'You like #{ANIMAL_1}s, and I like #{ANIMAL_2}s!';
       var result = variableInjector.inject(contents);
 
-      assert.equal('You like dogs, and I like cats!', result);
+      expect(result).to.equal('You like dogs, and I like cats!');
     });
     it('should replace undefined environment variables with "undefined"', function() {
       var contents = 'Oh no! I am #{SOMETHING}!';
       var result = variableInjector.inject(contents);
 
-      assert.equal('Oh no! I am undefined!', result);
+      expect(result).to.equal('Oh no! I am undefined!');
     });
   });
 });
