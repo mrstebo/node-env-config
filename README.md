@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mrstebo/node-env-config.svg?branch=master)](https://travis-ci.org/mrstebo/node-env-config)
+
 # node-env-config
 Library for loading configuration files that you can inject environment variables in to.
 
