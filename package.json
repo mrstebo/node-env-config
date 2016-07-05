@@ -14,6 +14,7 @@
     "mocha": "^2.5.3"
   },
   "scripts": {
+    "version:patch": "npm version patch",
     "test": "./node_modules/.bin/mocha --colors"
   },
   "repository": {
