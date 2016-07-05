@@ -1,6 +1,6 @@
 var expect = require('chai').expect;
 var path = require('path');
-var loader = require('../lib/node-env-config-loader');
+var loader = require('../lib/node-env-config-file-loader');
 
 describe('node-env-config', function() {
   describe('#load', function() {
