@@ -1,8 +1,8 @@
 {
-  "name": "node-env-config",
+  "name": "node-env-config-loader",
   "version": "1.0.1",
   "description": "Library for loading configuration files that you can inject environment variables in to.",
-  "main": "./lib/node-env-config.js",
+  "main": "./lib/node-env-config-loader.js",
   "dependencies": {
     "js-yaml": "^3.6.1",
     "lodash": "^4.13.1"
@@ -19,19 +19,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrstebo/node-env-config.git"
+    "url": "git+https://github.com/mrstebo/node-env-config-loader.git"
   },
   "keywords": [
     "node",
     "env",
     "config",
+    "loader",
     "yaml",
     "yml"
   ],
   "author": "mrstebo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrstebo/node-env-config/issues"
+    "url": "https://github.com/mrstebo/node-env-config-loader/issues"
   },
-  "homepage": "https://github.com/mrstebo/node-env-config#readme"
+  "homepage": "https://github.com/mrstebo/node-env-config-loader#readme"
 }
