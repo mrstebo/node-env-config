@@ -1,6 +1,6 @@
 {
   "name": "node-env-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library for loading configuration files that you can inject environment variables in to.",
   "main": "./lib/node-env-config.js",
   "dependencies": {
