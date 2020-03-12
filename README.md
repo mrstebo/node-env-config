@@ -2,7 +2,7 @@
 
 # node-env-config-file-loader
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/mrstebo/node-env-config-file-loader.svg)](https://greenkeeper.io/)
+
 Library for loading configuration files that you can inject environment variables in to.
 
 This library will replace `#{MY_ENVIRONMENT_VARIABLE}` with your environment variable of the same name.
