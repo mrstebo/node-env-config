@@ -5,7 +5,8 @@
   "main": "./lib/node-env-config-file-loader.js",
   "dependencies": {
     "js-yaml": "^3.6.1",
-    "lodash": "^4.13.1"
+    "lodash": "^4.13.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^4.0.1",
@@ -15,7 +16,9 @@
   },
   "scripts": {
     "version:patch": "npm version patch",
-    "test": "./node_modules/.bin/mocha --colors"
+    "test": "./node_modules/.bin/mocha --colors",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -35,5 +38,6 @@
   "bugs": {
     "url": "https://github.com/mrstebo/node-env-config-file-loader/issues"
   },
-  "homepage": "https://github.com/mrstebo/node-env-config-file-loader#readme"
+  "homepage": "https://github.com/mrstebo/node-env-config-file-loader#readme",
+  "snyk": true
 }
