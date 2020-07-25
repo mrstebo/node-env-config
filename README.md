@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/mrstebo/node-env-config-file-loader.svg?branch=master)](https://travis-ci.org/mrstebo/node-env-config-file-loader) [![npm version](https://badge.fury.io/js/node-env-config-file-loader.svg)](https://badge.fury.io/js/node-env-config-file-loader)
+[![Known Vulnerabilities](https://snyk.io/test/github/mrstebo/node-env-config-file-loader/badge.svg)](https://snyk.io/test/github/mrstebo/node-env-config-file-loader)
 
 # node-env-config-file-loader
 
